@@ -2,10 +2,27 @@
   "name": "introbackend",
   "version": "1.0.0",
   "description": "a first project to backend",
-  "main": "index.js",
+  "main": "backend/src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/src/index.js",
+    "dev": "nodemon backend/src/index.js"
   },
   "author": "Yoda bila clément",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Scalpy-game/IntroBackend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Scalpy-game/IntroBackend/issues"
+  },
+  "homepage": "https://github.com/Scalpy-game/IntroBackend#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.0.1",
+    "nodemon": "^3.1.11"
+  }
 }
